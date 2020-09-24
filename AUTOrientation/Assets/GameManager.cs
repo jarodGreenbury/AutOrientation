@@ -18,5 +18,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void LoadCarPark()
+    {
+        SceneManager.LoadScene("Car Park");
+    }
 }
 
