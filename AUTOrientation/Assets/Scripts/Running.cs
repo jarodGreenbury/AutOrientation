@@ -31,20 +31,18 @@ public class Running : MonoBehaviour
 
         else if (translation != 0)
         {
-            if (running)
+            speed = 10.0f;
+            anim2.SetBool("isRunning", false);
+            anim2.SetBool("isWalking", true);
+            anim2.SetBool("isIdle", false);
+
+            if (translation != 0 && running)
             {
-                speed = 20.0f;
-                anim2.SetBool("isSprinting", true);
-                anim2.SetBool("isRunning", false);
+                speed = 30.0f;
+                anim2.SetBool("isRunning", true);
+                anim2.SetBool("isWalking", false);
                 anim2.SetBool("isIdle", false);
 
-            }
-            else
-            {
-                speed = 10.0f;
-                anim2.SetBool("isSprinting", false);
-                anim2.SetBool("isRunning", true);
-                anim2.SetBool("isIdle", false);
             }
         }
 
@@ -52,6 +50,7 @@ public class Running : MonoBehaviour
         else
         {
             anim2.SetBool("isRunning", false);
+            anim2.SetBool("isWalking", false);
             anim2.SetBool("isIdle", true);
         }
 

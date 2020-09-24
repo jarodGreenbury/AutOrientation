@@ -8300,7 +8300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  runningSpeed: 20
+  runningSpeed: 30
   roationSpeed: 100
 --- !u!1001 &2081277165
 PrefabInstance:
