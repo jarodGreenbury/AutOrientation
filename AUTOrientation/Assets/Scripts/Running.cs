@@ -27,6 +27,7 @@ public class Running : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             anim2.SetTrigger("isJumping");
+            //UnityEngine.Debug.Log("Jumped");
         }
 
         else if (translation != 0)
