@@ -11,14 +11,6 @@ public class levelBar : MonoBehaviour
     public TextMeshProUGUI expDisplay;
     public Text levelDisplay;
 
-    public void setMaxExp(int maxExp)
-    {
-        slider.maxValue = maxExp;
-    }
-    public void setExp(int exp)
-    {
-        slider.value = exp;
-    }
     void Start()
     {
         expDisplay = FindObjectOfType<TextMeshProUGUI>();
@@ -26,6 +18,8 @@ public class levelBar : MonoBehaviour
     }
     void Update()
     {
+        slider.maxValue = playerstats.levelExpReq;
+        slider.value = playerstats.exp;
         if (playerstats.level < 10)
         {
             levelDisplay.text = "0" + playerstats.level.ToString();

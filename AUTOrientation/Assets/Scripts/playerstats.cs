@@ -22,8 +22,6 @@ public class playerstats : MonoBehaviour
         level = 1; //<-Starting Level. 98 for testing purposes
         levelExpReq = ((level * 10) + 25);
         exp = 0;
-        levelbar.setExp(exp);
-        levelbar.setMaxExp(levelExpReq);
     }
     void Update()
     {
@@ -53,7 +51,6 @@ public class playerstats : MonoBehaviour
    void earnExp(int e)
     {
         exp += e;
-        levelbar.setExp(exp);
 
     }
     void takeDamage(int d)
@@ -79,8 +76,6 @@ public class playerstats : MonoBehaviour
         exp -= levelExpReq;
         level++;
         levelExpReq = ((level * 10) + 25);
-        levelbar.setExp(exp);
-        levelbar.setMaxExp(levelExpReq);
 
         maxHealth = ((level * 5) + 100);
         health = maxHealth;
@@ -89,6 +84,5 @@ public class playerstats : MonoBehaviour
     void maxLevel()
     {
         exp = levelExpReq - 1;
-        levelbar.setExp(exp);
     }
 }
