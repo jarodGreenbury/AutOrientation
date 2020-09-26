@@ -10,6 +10,7 @@ public class levelBar : MonoBehaviour
     public Slider slider;
     public TextMeshProUGUI expDisplay;
     public Text levelDisplay;
+
     public void setMaxExp(int maxExp)
     {
         slider.maxValue = maxExp;
@@ -44,7 +45,7 @@ public class levelBar : MonoBehaviour
 
         //UnityEngine.Debug.Log(slider.value + "/" + slider.maxValue);
 
-
+    
     }
     
 }

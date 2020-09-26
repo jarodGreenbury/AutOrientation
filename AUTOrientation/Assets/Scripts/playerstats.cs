@@ -5,28 +5,35 @@ using UnityEngine;
 using UnityEngine.UI;
 public class playerstats : MonoBehaviour
 {
-    public int health;
+    public static int health;
+    public static int maxHealth;
 
     public static int level;
     public static int exp;
     public static int levelExpReq;
 
+    //public healthBar healthbar;    <----Health Bar WIP
     public levelBar levelbar;
+    
 
     void Start()
     {
         health = 100;
-        level = 98; //<-Starting Level. 98 for testing purposes
+        maxHealth = ((level * 5) + 100);
+        level = 1; //<-Starting Level. 98 for testing purposes
         levelExpReq = ((level * 10) + 25);
         exp = 0;
         levelbar.setExp(exp);
         levelbar.setMaxExp(levelExpReq);
+        //healthbar.setHealth(health);
+        //healthbar.setMaxHealth(maxHealth);
     }
     void Update()
     {
         if (Input.GetButtonDown("Jump") && level < 99)
         {
             earnExp(10);
+            takeDamage(10);
             //UnityEngine.Debug.Log("Pressed");
         }
         if (exp >= levelExpReq)
@@ -38,10 +45,12 @@ public class playerstats : MonoBehaviour
         {
             maxLevel();
         }
-        
+
         //UnityEngine.Debug.Log("Level: "+level);
         //UnityEngine.Debug.Log("Exp: "+exp);
         //UnityEngine.Debug.Log("Req: "+levelExpReq);
+        UnityEngine.Debug.Log("Health: "+health);
+        UnityEngine.Debug.Log("Max: " + maxHealth);
         
     }
    void earnExp(int e)
@@ -50,6 +59,25 @@ public class playerstats : MonoBehaviour
         levelbar.setExp(exp);
 
     }
+    void takeDamage(int d)
+    {
+        health -= d;
+        if(health < 0)
+        {
+            health = 0;
+        }
+        //healthbar.setHealth(health);
+    }
+
+    /*void healPlayer(int h) //For Future Use
+    {
+        health += h;
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+        healthbar.setHealth(health);
+    }*/
     void levelUp()
     {
         exp -= levelExpReq;
@@ -57,6 +85,12 @@ public class playerstats : MonoBehaviour
         levelExpReq = ((level * 10) + 25);
         levelbar.setExp(exp);
         levelbar.setMaxExp(levelExpReq);
+
+        maxHealth = ((level * 5) + 100);
+        health = maxHealth;
+        //healthbar.setHealth(health);
+        //healthbar.setMaxHealth(maxHealth);
+        
     }
     void maxLevel()
     {
