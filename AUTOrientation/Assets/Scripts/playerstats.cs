@@ -12,7 +12,6 @@ public class playerstats : MonoBehaviour
     public static int exp;
     public static int levelExpReq;
 
-    //public healthBar healthbar;    <----Health Bar WIP
     public levelBar levelbar;
     
 
@@ -25,8 +24,6 @@ public class playerstats : MonoBehaviour
         exp = 0;
         levelbar.setExp(exp);
         levelbar.setMaxExp(levelExpReq);
-        //healthbar.setHealth(health);
-        //healthbar.setMaxHealth(maxHealth);
     }
     void Update()
     {
@@ -49,8 +46,8 @@ public class playerstats : MonoBehaviour
         //UnityEngine.Debug.Log("Level: "+level);
         //UnityEngine.Debug.Log("Exp: "+exp);
         //UnityEngine.Debug.Log("Req: "+levelExpReq);
-        UnityEngine.Debug.Log("Health: "+health);
-        UnityEngine.Debug.Log("Max: " + maxHealth);
+        //UnityEngine.Debug.Log("Health: "+health);
+        //UnityEngine.Debug.Log("Max: " + maxHealth);
         
     }
    void earnExp(int e)
@@ -66,7 +63,6 @@ public class playerstats : MonoBehaviour
         {
             health = 0;
         }
-        //healthbar.setHealth(health);
     }
 
     /*void healPlayer(int h) //For Future Use
@@ -88,8 +84,6 @@ public class playerstats : MonoBehaviour
 
         maxHealth = ((level * 5) + 100);
         health = maxHealth;
-        //healthbar.setHealth(health);
-        //healthbar.setMaxHealth(maxHealth);
         
     }
     void maxLevel()
