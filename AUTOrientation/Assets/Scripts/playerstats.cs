@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class playerstats : MonoBehaviour
 {
     public static int health;
@@ -11,6 +12,7 @@ public class playerstats : MonoBehaviour
     public static int level;
     public static int exp;
     public static int levelExpReq;
+    public static bool playerDead;
 
     public levelBar levelbar;
     
@@ -22,6 +24,7 @@ public class playerstats : MonoBehaviour
         level = 1; //<-Starting Level. 98 for testing purposes
         levelExpReq = ((level * 10) + 25);
         exp = 0;
+        playerDead = false;
     }
     void Update()
     {
@@ -39,6 +42,10 @@ public class playerstats : MonoBehaviour
         if (level == 99)
         {
             maxLevel();
+        }
+        if(health <= 0)
+        {
+            gameOver();
         }
 
         //UnityEngine.Debug.Log("Level: "+level);
@@ -84,5 +91,10 @@ public class playerstats : MonoBehaviour
     void maxLevel()
     {
         exp = levelExpReq - 1;
+    }
+    void gameOver()
+    {
+        playerDead = true;
+        SceneManager.LoadScene("Menu");
     }
 }

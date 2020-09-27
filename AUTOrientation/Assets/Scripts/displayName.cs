@@ -10,7 +10,7 @@ public class displayName : MonoBehaviour
     
 
     // Update is called once per frame, therefore name is being updated every frame. Must be a better way to do this.
-    void Update()
+    void Start()
     {
         nameDisplay.GetComponent<Text>().text = "Name: " + enterName.username;
     }
