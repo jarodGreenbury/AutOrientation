@@ -5,9 +5,9 @@ using UnityEngine;
 public class Running : MonoBehaviour
 {
     static Animator anim2;
-    public float speed = 10.0f;
-    public float runningSpeed = 20.0f;
-    public float roationSpeed = 100.0f;
+    public float speed = 10.0f; //Character's Walking Speed
+    public float runningSpeed = 20.0f; //Character's Sprinting Speed
+    public float roationSpeed = 100.0f; // Character roationSpeed (turn left/righ)
     void Start()
     {
         anim2 = GetComponent<Animator>();
