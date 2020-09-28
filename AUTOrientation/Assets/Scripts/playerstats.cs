@@ -19,10 +19,10 @@ public class playerstats : MonoBehaviour
 
     void Start()
     {
-        health = 100;
-        maxHealth = ((level * 5) + 100);
-        level = 1; //<-Starting Level. 98 for testing purposes
-        levelExpReq = ((level * 10) + 25);
+        health = 20; //<-Starting Health. 20 for testing. 100 default
+        maxHealth = ((level * 2) + 100);
+        level = 1; //<-Starting Level. 98 for testing. 1 default
+        levelExpReq = ((level * 10) + 50);
         exp = 0;
         playerDead = false;
     }
