@@ -16,6 +16,7 @@ public class time : MonoBehaviour
 
     void Update()
     {
+        //UnityEngine.Debug.Log(today);
         timeString = today.ToString("HH:mm");
         clock.text = ("Day: " + day + " Time: " + timeString);
         ChangeClock();
@@ -30,6 +31,9 @@ public class time : MonoBehaviour
             day = day + 1;
         }
         TimeSpan newTime = new TimeSpan(0, 0, 0, 6);
-        today = today + newTime;
+        if (!pauseMenu.gameIsPaused)
+        {
+            today = today + newTime;
+        }
     }
 }
