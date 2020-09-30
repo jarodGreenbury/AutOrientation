@@ -14,20 +14,24 @@ public class playerstats : MonoBehaviour
     public static int levelExpReq;
     public static bool playerDead;
 
+    public static int collected;
+
     public levelBar levelbar;
     
 
     void Start()
     {
-        health = 20; //<-Starting Health. 20 for testing. 100 default
+        health = 100; //<-Starting Health. 20 for testing. 100 default
         maxHealth = ((level * 2) + 100);
         level = 1; //<-Starting Level. 98 for testing. 1 default
         levelExpReq = ((level * 10) + 50);
         exp = 0;
+        collected = 0;
         playerDead = false;
     }
     void Update()
     {
+        //UnityEngine.Debug.Log(collected);
         if (Input.GetButtonDown("Jump") && level < 99)
         {
             earnExp(10);

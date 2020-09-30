@@ -13,7 +13,14 @@ public class Running : MonoBehaviour
         anim2 = GetComponent<Animator>();
     }
 
-
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Collectible"))
+        {
+            other.gameObject.SetActive(false);
+            playerstats.collected += 1;
+        }
+    }
     void Update()
     {
         bool running = Input.GetKey(KeyCode.LeftShift);
@@ -24,6 +31,8 @@ public class Running : MonoBehaviour
         rotation *= Time.deltaTime;
         transform.Translate(0, 0, translation);
         transform.Rotate(0, rotation, 0);
+        
+       
         if (Input.GetButtonDown("Jump"))
         {
             anim2.SetTrigger("isJumping");

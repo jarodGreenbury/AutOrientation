@@ -16,4 +16,8 @@ public class menuScript : MonoBehaviour
             deathScreen.SetActive(true);
         }
     }
+    public void quit()
+    {
+        UnityEngine.Debug.Log("Qutting");
+    }
 }
