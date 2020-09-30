@@ -17,6 +17,7 @@ public class Running : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Collectible"))
         {
+            FindObjectOfType<AudioManager>().Play("Coin");
             other.gameObject.SetActive(false);
             playerstats.collected += 1;
         }
@@ -36,6 +37,7 @@ public class Running : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             anim2.SetTrigger("isJumping");
+            FindObjectOfType<AudioManager>().Play("Jump");
             //UnityEngine.Debug.Log("Jumped");
         }
 
