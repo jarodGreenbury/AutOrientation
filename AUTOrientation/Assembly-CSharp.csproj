@@ -61,8 +61,10 @@
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\CharacterSelectMenu.cs" />
      <Compile Include="Assets\Scripts\Running.cs" />
+     <Compile Include="Assets\Scripts\achievements.cs" />
      <Compile Include="Assets\Scripts\carCam.cs" />
      <Compile Include="Assets\Scripts\clampHealthbar.cs" />
+     <Compile Include="Assets\Scripts\collectible.cs" />
      <Compile Include="Assets\Scripts\deathScript.cs" />
      <Compile Include="Assets\Scripts\displayName.cs" />
      <Compile Include="Assets\Scripts\enterName.cs" />
@@ -77,7 +79,6 @@
      <Compile Include="Assets\Scripts\sun.cs" />
      <Compile Include="Assets\Scripts\time.cs" />
      <Compile Include="Assets\Scripts\trigger.cs" />
-     <Compile Include="Assets\collectibleRotation.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

@@ -14,7 +14,7 @@ public class sun : MonoBehaviour
     {
         if (sunLight.position.y < -350)
         {
-            Debug.Log("speed 20");
+            UnityEngine.Debug.Log("speed 20");
             speed = 20f;
         }
         else
