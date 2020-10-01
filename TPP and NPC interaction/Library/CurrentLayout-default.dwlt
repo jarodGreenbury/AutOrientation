@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 106
+  controlID: 18
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 40
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 41
+  controlID: 51
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -328,8 +328,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -590
     m_HBaseRangeMax: 590
-    m_VBaseRangeMin: -317
-    m_VBaseRangeMax: 317
+    m_VBaseRangeMin: -327.5
+    m_VBaseRangeMax: 327.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -346,11 +346,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 1180
-      height: 634
+      height: 655
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 590, y: 317}
+    m_Translation: {x: 590, y: 327.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -358,9 +358,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -590
-      y: -317
+      y: -327.5
       width: 1180
-      height: 634
+      height: 655
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1180, y: 655}
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.0023141801, y: 0.84104645, z: -1.444835}
+    m_Target: {x: -2.1911018, y: 4.9963017, z: 0.0024465919}
     speed: 2
-    m_Value: {x: -0.0023141801, y: 0.84104645, z: -1.444835}
+    m_Value: {x: -2.1911018, y: 4.9963017, z: 0.0024465919}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -510,11 +510,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.25263134, y: -0.37290248, z: 0.106083706, w: 0.88655996}
     speed: 2
-    m_Value: {x: 0.25261605, y: -0.3728799, z: 0.10607728, w: 0.88650626}
+    m_Value: {x: -0.25263134, y: 0.37290245, z: -0.1060837, w: -0.88655996}
   m_Size:
-    m_Target: 2.461276
+    m_Target: 0.6612762
     speed: 2
-    m_Value: 2.161276
+    m_Value: 0.6612762
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -619,9 +619,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 82ad9b9af6d94984f9e6716ec71a803f, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 998c319e584ee20488052fd1fb90cbd2, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 761021892091584879, guid: 82ad9b9af6d94984f9e6716ec71a803f, type: 2}
+  - m_Target: {fileID: 1351291408831919713, guid: 998c319e584ee20488052fd1fb90cbd2, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -672,20 +672,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Character
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Character
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: E:\SDP GAME\Third Person Player Asset
+  m_LastProjectPath: E:\SDP GAME\AutOrientation\TPP and NPC interaction
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 823c0000
-    m_LastClickedID: 15490
+    m_SelectedIDs: 5e3c0000
+    m_LastClickedID: 15454
     m_ExpandedIDs: 000000003c3c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300003c4f0000c0420000c442000068380000703b000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
