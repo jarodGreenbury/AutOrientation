@@ -658,7 +658,6 @@
  <HintPath>D:/Uni/SDP/2019.4.5f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
-<<<<<<< Updated upstream
  <HintPath>D:/Uni/SDP/github/AutOrientation/AUTOrientation/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
@@ -684,33 +683,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Uni/SDP/github/AutOrientation/AUTOrientation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-=======
- <HintPath>E:/SDP GAME/AutOrientation/AUTOrientation/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>E:/SDP GAME/AutOrientation/AUTOrientation/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/SDP GAME/AutOrientation/AUTOrientation/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>E:/SDP GAME/AutOrientation/AUTOrientation/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>E:/SDP GAME/AutOrientation/AUTOrientation/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>E:/SDP GAME/AutOrientation/AUTOrientation/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>E:/SDP GAME/AutOrientation/AUTOrientation/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/SDP GAME/AutOrientation/AUTOrientation/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>E:/SDP GAME/AutOrientation/AUTOrientation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
->>>>>>> Stashed changes
  </Reference>
   </ItemGroup>
   <ItemGroup>
