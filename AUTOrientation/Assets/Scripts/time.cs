@@ -13,7 +13,7 @@ public class time : MonoBehaviour
 {
     public Text clock;
     public int timeHour;
-    public int day = 0;
+    public int day = 1;
     public string timeString;
     public bool dayChanged = false;
 
@@ -27,7 +27,7 @@ public class time : MonoBehaviour
         ChangeClock();
         timeString = today.ToString("HH:mm");
         clock.text = ("Day: " + day + " Time: " + timeString).ToString(); //display the time to the GUI
-        
+        achievementCheck();
        //yield WaitForSeconds(0.2f);
         
     }
@@ -49,6 +49,25 @@ public class time : MonoBehaviour
         if (!pauseMenu.gameIsPaused)
         {
             today = today + newTime;
+        }
+    }
+    void achievementCheck()
+    {
+        if(day == 5)
+        {
+            achievements.a5Complete = true;
+        }
+        if (day == 10)
+        {
+            achievements.a6Complete = true;
+        }
+        if (day == 15)
+        {
+            achievements.a7Complete = true;
+        }
+        if (day == 20)
+        {
+            achievements.a8Complete = true;
         }
     }
 }

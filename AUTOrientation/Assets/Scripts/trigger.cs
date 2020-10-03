@@ -5,6 +5,7 @@ public class trigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-         FindObjectOfType<GameManager>().LoadCarPark();
+        FindObjectOfType<GameManager>().LoadCarPark();
+        achievements.a9Complete = true;
     }
 }
