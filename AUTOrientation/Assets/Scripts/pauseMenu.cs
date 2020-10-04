@@ -12,11 +12,13 @@ public class pauseMenu : MonoBehaviour
     public GameObject playerGUI;
     public GameObject pauseMenuPage;
     public GameObject achievementsPage;
+    public bool isMuted;
 
     // Update is called once per frame
     void Start()
     {
         Resume();
+        isMuted = false;
         
     }
 
@@ -33,6 +35,13 @@ public class pauseMenu : MonoBehaviour
                 Pause();
             }
         }
+    }
+   
+
+    public void muteSound()
+    {
+        isMuted = !isMuted;
+        AudioListener.pause = isMuted;
     }
 
     public void Resume()
