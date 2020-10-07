@@ -15,6 +15,7 @@ public class playerstats : MonoBehaviour
     public static bool playerDead;
 
     public static int collected;
+    public static int numCollectibles = 5;
 
     public levelBar levelbar;
     
@@ -51,6 +52,7 @@ public class playerstats : MonoBehaviour
         {
             gameOver();
         }
+        achievementCheck();
 
         //UnityEngine.Debug.Log("Level: "+level);
         //UnityEngine.Debug.Log("Exp: "+exp);
@@ -59,7 +61,7 @@ public class playerstats : MonoBehaviour
         //UnityEngine.Debug.Log("Max: " + maxHealth);
         
     }
-   void earnExp(int e)
+   public static void earnExp(int e)
     {
         exp += e;
 
@@ -101,4 +103,29 @@ public class playerstats : MonoBehaviour
         playerDead = true;
         SceneManager.LoadScene("Menu");
     }
+
+    void achievementCheck()
+    {
+        if (level >= 10)
+        {
+            achievements.a0Complete = true;
+        }
+        if (level >= 20)
+        {
+            achievements.a1Complete = true;
+        }
+        if (level >= 30)
+        {
+            achievements.a2Complete = true;
+        }
+        if (level >= 40)
+        {
+            achievements.a3Complete = true;
+        }
+        if (level >= 50)
+        {
+            achievements.a4Complete = true;
+        }
+    }
+
 }

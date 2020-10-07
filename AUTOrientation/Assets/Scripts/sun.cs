@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Author: Jarod Greenbury
+ * Date Modified : 1/10/20
+ * Purpose: This script controls the sun(main light) to revolve
+ * around the level. To be place onto the main level light
+ */
 public class sun : MonoBehaviour
 {
     //is the speed of the day
@@ -17,10 +22,10 @@ public class sun : MonoBehaviour
             UnityEngine.Debug.Log("speed 20");
             speed = 20f;
         }
-        else
+       /* else
         {
-            speed = 5f;
-        }
+            speed = speed;
+        }*/
         //code changes the position and rotation of the sun(directional light)
         transform.RotateAround(Vector3.zero, Vector3.right, speed * Time.deltaTime);
         transform.LookAt(Vector3.zero);
