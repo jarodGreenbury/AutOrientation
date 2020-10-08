@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Car Park.unity
     guid: df3942449feb92f4e8e53891b4326667
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: d460a7093b55c9341b51f38373644fed
   m_configObjects: {}

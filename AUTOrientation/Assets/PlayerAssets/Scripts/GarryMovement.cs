@@ -6,15 +6,20 @@ public class GarryMovement : MonoBehaviour
 {
     
     static Animator anim2;
-    public float speed = 10.0f;
+    public float speed = 2f;
     public float roationSpeed = 100.0f;
     public float jump = 50f;
+    public float speedMultiply = 4f;  //used for multiply the speed
+
+    private float newspeed;  //the speed that will be changed
 
 
-    private bool playerIsOnTheGround;
+
+    private bool playerIsOnTheGround; //be sure the surface to be tagged as Floor, so it can jump
     private Rigidbody rbody;
     void Start()
     {
+        newspeed = speed;
         anim2 = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
         
@@ -23,7 +28,7 @@ public class GarryMovement : MonoBehaviour
 
     void Update()
     {
-        float translation = Input.GetAxis("Vertical") * speed;
+        float translation = Input.GetAxis("Vertical") * newspeed;
         float rotation = Input.GetAxis("Horizontal") * roationSpeed;
         translation *= Time.deltaTime;
         rotation *= Time.deltaTime;
@@ -36,7 +41,17 @@ public class GarryMovement : MonoBehaviour
             anim2.SetTrigger("isJumping");
             rbody.AddForce(new Vector3(0, jump, 0), ForceMode.Impulse);    
         }
-
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
+        {
+            newspeed = speed*speedMultiply;
+            anim2.SetBool("NarutoRunning", true);
+        }
+        else
+        {
+            newspeed=speed;
+            anim2.SetBool("NarutoRunning", false);
+            
+        }
 
       
         if (translation != 0)

@@ -20,4 +20,13 @@ public class menuScript : MonoBehaviour
     {
         UnityEngine.Debug.Log("Qutting");
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void Options()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
