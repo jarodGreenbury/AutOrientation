@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\OptionScripts\SneakersChanger.cs" />
      <Compile Include="Assets\Scripts\Running.cs" />
      <Compile Include="Assets\Scripts\Scene.cs" />
+     <Compile Include="Assets\Scripts\ShowText.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\achievements.cs" />
      <Compile Include="Assets\Scripts\carCam.cs" />
@@ -86,6 +87,7 @@
      <Compile Include="Assets\Scripts\deathScript.cs" />
      <Compile Include="Assets\Scripts\displayName.cs" />
      <Compile Include="Assets\Scripts\enterName.cs" />
+     <Compile Include="Assets\Scripts\exitCarTrigger.cs" />
      <Compile Include="Assets\Scripts\healthBar.cs" />
      <Compile Include="Assets\Scripts\levelBar.cs" />
      <Compile Include="Assets\Scripts\lightController.cs" />
@@ -98,7 +100,6 @@
      <Compile Include="Assets\Scripts\sun.cs" />
      <Compile Include="Assets\Scripts\time.cs" />
      <Compile Include="Assets\Scripts\trigger.cs" />
-     <Compile Include="Assets\ShowText.cs" />
      <None Include="Assets\PlayerAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\PlayerAssets\TextMesh Pro\Shaders\TMPro.cginc" />
