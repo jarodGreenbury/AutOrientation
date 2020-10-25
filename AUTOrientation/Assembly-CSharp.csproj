@@ -82,12 +82,12 @@
      <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\achievements.cs" />
      <Compile Include="Assets\Scripts\carCam.cs" />
+     <Compile Include="Assets\Scripts\carTrigger.cs" />
      <Compile Include="Assets\Scripts\clampHealthbar.cs" />
      <Compile Include="Assets\Scripts\collectible.cs" />
      <Compile Include="Assets\Scripts\deathScript.cs" />
      <Compile Include="Assets\Scripts\displayName.cs" />
      <Compile Include="Assets\Scripts\enterName.cs" />
-     <Compile Include="Assets\Scripts\exitCarTrigger.cs" />
      <Compile Include="Assets\Scripts\healthBar.cs" />
      <Compile Include="Assets\Scripts\levelBar.cs" />
      <Compile Include="Assets\Scripts\lightController.cs" />
