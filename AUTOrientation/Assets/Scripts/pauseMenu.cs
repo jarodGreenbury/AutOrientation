@@ -5,6 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/* Author: Matthew Blenkinsopp
+ * Date Modified : 26/10/2020
+ * Purpose: Controls the logic of the pause menu. Deals with stopping 
+ * and starting in-game time as well as changing the scene and active
+ * scene elemants where necessary.
+ */
 public class pauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;

@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
+/* Author: Matthew Blenkinsopp
+ * Date Modified : 26/10/2020
+ * Purpose: Controlls all of the data surrounding the player. Stores health, experience, 
+ * deals with updating these calues also. 
+ */
 public class playerstats : MonoBehaviour
 {
     public static int health;
