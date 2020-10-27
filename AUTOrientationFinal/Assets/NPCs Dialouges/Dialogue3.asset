@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf7009bfd0470c64fa6de37ea9783920, type: 3}
+  m_Name: Dialogue3
+  m_EditorClassIdentifier: 
+  name: Franklin
+  PlayerName: Garry
+  dialogue:
+  - Hello, are you new here?
+  - My name is Franklin! I can give you some tips to feel like home here.
+  - For beginning, you could collect some coins that are around the Campus. There
+    is a coin in front of me. Go collect it.
+  - I dont know, try to find my friend Seraphine, he always knows where the teacher
+    is.
+  - No problem buddy!
+  playerDialogues:
+  - Yea, what is your name?
+  - I would like to know some information about this Campus.
+  - One more question, do you know where the teacher is?
+  - Thank you Franklin!

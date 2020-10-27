@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf7009bfd0470c64fa6de37ea9783920, type: 3}
+  m_Name: Dialogue2
+  m_EditorClassIdentifier: 
+  name: Franklin
+  PlayerName: Garry
+  dialogue:
+  - Greetings!
+  - Hmmm I don`t know very much information, but my boyfriend can tell you.
+  - He is at the bus station, just go left.
+  - No problem!
+  playerDialogues:
+  - Hi! Can you give me some information about the Campus?
+  - Cool, do you know where he is?
+  - Thanks.
