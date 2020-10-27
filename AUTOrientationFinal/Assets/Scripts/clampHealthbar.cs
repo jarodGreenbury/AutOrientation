@@ -4,7 +4,10 @@ using System.Collections.Specialized;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+/* Author: Matthew Blenkinsopp
+ * Date Modified : 26/10/2020
+ * Purpose: Attaches the healthbar to a placeholder object positioned above the player
+ */
 public class clampHealthbar : MonoBehaviour
 {
     public GameObject healthbar;

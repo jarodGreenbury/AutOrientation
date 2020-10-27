@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/* Author: Matthew Blenkinsopp
+ * Date Modified : 26/10/2020
+ * Purpose: Controls the button functionality in the menu. Also makes sure the deathscreen is 
+ * active if returning to the menu when the player is dead.
+ */
 public class menuScript : MonoBehaviour
 {
     public GameObject mainMenu;

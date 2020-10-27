@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
+/* Author: Matthew Blenkinsopp
+ * Date Modified : 26/10/2020
+ * Purpose: Controls position and rotation of secondary camera which functions as a minimap.
+ */
 public class minimapScript : MonoBehaviour
 {
     public Transform player;

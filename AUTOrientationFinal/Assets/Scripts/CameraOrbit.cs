@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/* Author: Matthew Blenkinsopp
+ * Date Modified : 26/10/2020
+ * Purpose: Tracks the mouse position and adjusts the
+ * camera accordingly while pivoting around the player.
+ */
 public class CameraOrbit : MonoBehaviour
 {
 

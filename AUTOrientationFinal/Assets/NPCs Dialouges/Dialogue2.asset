@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7009bfd0470c64fa6de37ea9783920, type: 3}
   m_Name: Dialogue2
   m_EditorClassIdentifier: 
-  name: Franklin
-  PlayerName: Garry
+  name: Trevor
+  PlayerName: Player
   dialogue:
   - Greetings!
   - Hmmm I don`t know very much information, but my boyfriend can tell you.

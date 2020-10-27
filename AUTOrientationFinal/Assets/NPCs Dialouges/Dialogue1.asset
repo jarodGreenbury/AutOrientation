@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue1
   m_EditorClassIdentifier: 
   name: John
-  PlayerName: Garry
+  PlayerName: Player
   dialogue:
   - Hello, are you enjoying the Campus
   - Go Forward To Enter The Carpark

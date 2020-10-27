@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue3
   m_EditorClassIdentifier: 
   name: Franklin
-  PlayerName: Garry
+  PlayerName: Player
   dialogue:
   - Hello, are you new here?
   - My name is Franklin! I can give you some tips to feel like home here.

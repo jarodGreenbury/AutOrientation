@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TeacherDialogue
   m_EditorClassIdentifier: 
   name: Teacher
-  PlayerName: Garry
+  PlayerName: Player
   dialogue:
-  - Hello Garry! I thought I wouldn't see you today.
+  - Hello Player! I thought I wouldn't see you today.
   - Good, are you ready for a test?
   playerDialogues:
   - Hello sir, sorry for being late. When do we start the courses.
-  - Yea, i guess...
+  - Yea, I guess...

@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 /* Author: Matthew Blenkinsopp
  * Date Modified : 26/10/2020
- * Purpose: Stores individual booleans to track when each of the achievements has been completed. 
+ * Purpose: Stores individual booleans to track when each of the 
+ * achievements has been completed. 
  */
 public class achievements : MonoBehaviour
 {

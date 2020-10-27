@@ -4,6 +4,11 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
+/* Author: Matthew Blenkinsopp
+ * Date Modified : 26/10/2020
+ * Purpose: controls the rotation of the coins in game as
+ * well as deactivating them once they are triggered by the player
+ */
 public class collectible : MonoBehaviour
 {
     private float z;

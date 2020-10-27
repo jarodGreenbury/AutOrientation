@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue4
   m_EditorClassIdentifier: 
   name: Seraphine
-  PlayerName: Garry
+  PlayerName: Player
   dialogue:
   - Wassup!
   - He is eating now, try to find some tables with umbrellas.
