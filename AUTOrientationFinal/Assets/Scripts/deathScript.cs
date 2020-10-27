@@ -12,10 +12,25 @@ using TMPro;
 public class deathScript : MonoBehaviour
 {
     public Text namelevel;
-
+    private int playerLevel;
+    private int playerExp;
+    private int score;
     // Start is called before the first frame update
     void Start()
     {
-        namelevel.text = "NAME: " + enterName.username + "\nLEVEL: " + playerstats.level + "\nFINAL SCORE:\n" + playerstats.level * playerstats.exp;
+        playerLevel = playerstats.level;
+        playerExp = playerstats.exp;
+        score = calculateScore(playerLevel, playerExp);
+        namelevel.text = "NAME: " + enterName.username + "\nLEVEL: " + playerstats.level + "\nFINAL SCORE:\n" + score;
+    }
+
+    public int calculateScore(int lvl, int exp)
+    {
+        int temp = 0;
+        for (int i = 0; i <= lvl; i++)
+        {
+            temp = temp + (i * exp);
+        }
+        return temp;
     }
 }

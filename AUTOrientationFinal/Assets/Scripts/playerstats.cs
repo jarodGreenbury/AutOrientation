@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 
 /* Author: Matthew Blenkinsopp
  * Date Modified : 26/10/2020
- * Purpose: Controlls all of the data surrounding the player. Stores health, experience, 
- * deals with updating these calues also. 
+ * Purpose: Controls all of the data surrounding the player. Stores health, experience, 
+ * deals with updating these values also. 
  */
 public class playerstats : MonoBehaviour
 {
@@ -81,7 +81,7 @@ public class playerstats : MonoBehaviour
         exp += e;
 
     }
-    void takeDamage(int d)
+    public void takeDamage(int d)
     {
         health -= d;
         if(health < 0)
